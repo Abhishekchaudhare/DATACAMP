@@ -1,1 +1,25 @@
 This file was created to understand git opull vs git fetch
+
+Scenario:-
+Fetch_Vs_Pull.txt file has been added to remote github directly.Thus this file is not present on our local branch.
+A file named Git_fetch_vs_pull.txt has been created and I tried pushing this change to remote but below mentioned error occured:-
+
+ 
+ "! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Abhishekchaudhare/DATACAMP.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details."
+
+This error came as there are some changed in remote that are not present in our local.
+Thus we have to have those changes in our local before push changes of local in remote.
+
+--What i did???
+1st way:-
+-->I did git pull
+-->Added a commit comment
+-->came to directory base, did git push
+
+2nd way:-
