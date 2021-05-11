@@ -1,0 +1,7 @@
+Whenever you switch to another branch with uncommitted changes (or new files added) in your working tree, these uncommitted changes will also be carried to the new branch that you switch to. Changes that you commit will be committed to the newly switched branch.
+
+However, if Git finds a conflict between the files from the newly switched branch and the uncommitted changes from the previous branch, you will not be allowed to switch to the other branch. You must commit or stash those changes first before switching branches.
+
+You can think of stash as a drawer to store uncommitted changes temporarily. Stashing allows you to put aside the “dirty” changes in your working tree and continue working on other things in a different branch on a clean slate.
+
+Uncommitted changes that are stored in the stash can be taken out and applied to the original branch and other branches as well.
