@@ -1,0 +1,7 @@
+#Sometimes git will not allow you to change you branch before doing commit.
+-->One alternate solution here is to git stash your changes and then switch the branch.
+-->we can apply these changes to any aligned code later.
+Command used:-
+Git stash save "Permission Changes"
+Git stash list
+Git stash apply stash@{0}

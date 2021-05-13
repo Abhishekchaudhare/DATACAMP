@@ -1,6 +1,6 @@
 This file was created to understand git opull vs git fetch
 
-Scenario:-
+Scenario 1:-
 Fetch_Vs_Pull.txt file has been added to remote github directly.Thus this file is not present on our local branch.
 A file named Git_fetch_vs_pull.txt has been created and I tried pushing this change to remote but below mentioned error occured:-
 
@@ -17,9 +17,50 @@ This error came as there are some changed in remote that are not present in our 
 Thus we have to have those changes in our local before push changes of local in remote.
 
 --What i did???
-1st way:-
 -->I did git pull
 -->Added a commit comment
 -->came to directory base, did git push
 
-2nd way:-
+Scenario 2:-
+I deleted Fetch_Vs_Pull.txt file from remote.
+I commited Git_fetch_vs_pull.txt in local and while pushing this change i got the same error again as there are some changes in remote that are not present in our local (i.e deleted Fetch_Vs_Pull.txt file)
+
+-What i did??
+-->Git Fetch
+-->Observations:-
+-Changes that i did in remote are not visible in my local this till now not even in git log.
+
+"$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+nothing to commit, working tree clean"
+
+
+--But i could see the commit at this below location:-
+go to /c/Users/abhis/GITHUB/DATACAMP/.git/refs/remotes/origin
+do cat main to see the commit of remote 
+
+--git log :- the remote commit is not visible
+
+--i don't know how should i compare changes in staged with working directory?
+
+git merge
+"$ git merge
+Removing HOW TO/Fetch_Vs_Pull
+Merge made by the 'recursive' strategy.
+ HOW TO/Fetch_Vs_Pull | 1 -
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 HOW TO/Fetch_Vs_Pull"
+ 
+ git push
+
+
+
+
+
+
+
+
