@@ -1,0 +1,45 @@
+->Vitual environments helps in freezing dependencies to prevent future breaking of code due to any upgrade.
+->There are multiple ways of creating a virtual environment , some are after installing modules like 'virtualenv' and some donot require any installation.
+->Here we will work with 'venv' module which is in built.
+---------------
+Steps:-
+python -m venv abhishek_venv
+(this will create a folder with the name abhishek_venv and that folder will have lot of files)
+
+To activate virtual environment:-
+POSIX
+bash/zsh - $ source <venv>/bin/activate
+fish - $ source <venv>/bin/activate.fish
+csh/tcsh$ - source <venv>/bin/activate.csh
+PowerShell Core - $ <venv>/bin/Activate.ps1
+
+Windows
+cmd.exe - C:\> <venv>\Scripts\activate.bat
+PowerShell - PS C:\> <venv>\Scripts\Activate.ps1
+
+To deactivate:-
+deactivate
+-------------
+
+->Creating requirement.txt to freeze the dependencies of the project.
+pip freeze > requirement.txt
+->Using requirement.txt
+Go inside the virtual environment and do:
+1. pip install -r requirement.txt
+?might not be able to install some packages,for now delete them
+
+
+-------------
+
+
+Creating a virtual envirinment using System settings
+python -m venv venv_2 --system-site-packages
+
+
+
+
+
+
+
+
+
