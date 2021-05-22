@@ -1,4 +1,5 @@
 {
     "code-runner.clearPreviousOutput": true,
-    "code-runner.runInTerminal": true
+    "code-runner.runInTerminal": true,
+    "python.pythonPath": "C:\\Users\\abhis\\Anaconda3\\python.exe"
 }
